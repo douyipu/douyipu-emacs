@@ -8,7 +8,7 @@
   (let ((default-directory (file-name-as-directory dir)))
     (add-to-list 'load-path dir)
     (normal-top-level-add-subdirs-to-load-path)))
-(add-subdirs-to-load-path "~/lazycat-emacs/site-lisp/")
+(add-subdirs-to-load-path "~/douyipu-emacs/site-lisp/")
 
 (require 'init)
 ```
