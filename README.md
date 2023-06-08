@@ -3,6 +3,11 @@
 ## Add config in ~/.emacs
 
 ```elisp
+(setq url-proxy-services
+   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+     ("http" . "192.168.56.1:7890")
+     ("https" . "192.168.56.1:7890")))
+     
 (defun add-subdirs-to-load-path (dir)
   "Recursive add directories to `load-path'."
   (let ((default-directory (file-name-as-directory dir)))
